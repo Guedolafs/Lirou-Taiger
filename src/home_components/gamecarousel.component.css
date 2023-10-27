@@ -1,0 +1,13 @@
+.game-carousel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.list-games {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;   
+}

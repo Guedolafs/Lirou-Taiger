@@ -1,23 +1,17 @@
 import logo from './logo.svg';
 import './App.css';
+import LoginPage from './pages/login/login.page';
+import Home from './pages/home/home.page';
+import Tigrinho from './joguinhos/tigrinho';
+import Mines from './joguinhos/mines';
+import Aviaozinho from './joguinhos/aviaozinho';
+import MatrixRain from './components/matrix.component';
+import Header from './components/header.component';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <MatrixRain/>
     </div>
   );
 }

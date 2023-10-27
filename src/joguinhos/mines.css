@@ -1,0 +1,44 @@
+.Mines {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  h1 {
+    font-size: 24px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+  
+  .matriz {
+    display: inline-block;
+    border: 2px solid #000;
+  }
+  
+  .linha {
+    display: flex;
+  }
+  
+  .celula {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #000;
+    font-size: 24px;
+    background-color: #f0f0f0;
+  }
+  
+  .mina {
+    background-color: #ff0000;
+    color: #fff;
+  }
+  

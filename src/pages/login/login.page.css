@@ -1,0 +1,113 @@
+/* Estilos para a tela de login */
+.tela-login {
+  /*background-color: #333; /* Cor de fundo para a tela de login */
+  position: relative;
+  display: flex;
+  justify-content: flex-end; /* Alinhar o conteúdo no canto direito horizontalmente */
+  align-items: center; /* Centralizar verticalmente */
+  min-height: 100vh;
+  height: 100%;
+}
+
+/* Estilos para o fundo da tela */
+.login-fundo {
+  position: absolute;
+  top: 40px; 
+  left: 40px;
+  width: 100%;
+  height: 100%;
+  background-image: url('/public/images/hackersemfundo.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: contain;
+  justify-content: center;
+}
+
+
+/* Estilos para o container de login no canto direito */
+.login-container {
+  background-color: transparent; /* Cor de fundo para o contêiner de login */
+  color: #fff;
+  padding: 20px;
+  text-align: center; /* Centralize horizontalmente o texto */
+  display: flex; /* Use display flex */
+  flex-direction: column; /* Empilhe elementos verticalmente */
+  border-radius: 10px 0 0 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+  position: absolute;
+  top: 45%;
+  right: 5%;
+  transform: translateY(-50%);
+}
+
+.login-label {
+  display: block;
+  color: #14c658; /* Cor do texto do label */
+  text-align: left; /* Alinha o texto do label à esquerda */
+  width: 100%; /* Garante que os labels ocupem toda a largura do contêiner */
+  margin-bottom: 3px; /* Espaçamento inferior para separar os labels */
+}
+
+.form-input {
+  width: 300px;
+  padding: 20px;
+  margin-bottom: 15px;
+  border: 1px solid #14c658; /* Cor da borda do campo de input */
+  border-radius: 5px;
+  font-size: 16px;
+  color: #333; /* Cor do texto do input */
+  margin-right: 20px; /* Adicione uma margem à esquerda */
+}
+
+.login-button {
+  background-color: #14c658; /* Cor de fundo para o botão de login */
+  color: #fff; /* Cor do texto do botão */
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Adiciona uma transição suave para a cor de fundo */
+}
+
+.login-button:hover {
+  background-color: #e44d2a; /* Cor de fundo quando o botão é hover */
+}
+
+/* Estilos para tela menor (responsivo) */
+@media (max-width: 768px) {
+  .tela-login {
+    justify-content: center; /* Centralizar horizontal e verticalmente em telas menores */
+    align-items: center; /* Centralizar verticalmente em telas menores */
+  }
+  .login-container {
+    height: auto;
+    width: clamp(300px, 80vw, 500px);
+    border-radius: 10px;
+    background-color: transparent; /* Torna o fundo transparente */
+  }
+  .login-fundo {
+    display: none;
+  }
+  .form-input {
+    justify-content: center;
+    margin-top: 5px; /* Mova o rótulo um pouco para baixo */
+    text-align: center;
+    font-size: 16px; /* Mantenha o tamanho da fonte original ou ajuste conforme necessário */
+    width: 250px; /* Reduza o tamanho do quadrado do rótulo */
+    margin-bottom: 5px;
+    padding: 5px;
+    margin-right: 0px; /* Adicione uma margem à esquerda */
+  }
+  .login-button {
+    margin-top: 5px; /* Mova o rótulo um pouco para baixo */
+    margin-bottom: 0px;
+    width: 30%;
+    padding: 3px;
+  }
+  .login-label {
+    margin: 1px;
+  }
+}
